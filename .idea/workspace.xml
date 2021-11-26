@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51da0e92-a4ad-4899-b0e1-338edae3b789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/msg-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/msg-board.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/CartServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +24,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -62,7 +59,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="202RwAfJPyiGxwRKzCw3F7JO972" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -305,7 +304,7 @@
       <workItem from="1637471733958" duration="15249000" />
       <workItem from="1637640303764" duration="3818000" />
       <workItem from="1637709416936" duration="2704000" />
-      <workItem from="1637943959883" duration="695000" />
+      <workItem from="1637943959883" duration="993000" />
     </task>
     <servers />
   </component>
