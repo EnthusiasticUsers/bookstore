@@ -1,0 +1,260 @@
+.maincontent .panel h2{
+    font-size: 24px;
+    color:#7c879c;
+    padding-top:15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.maincontent .row .col-12 .panel .form-group{
+    height: 40px;
+    margin-top:30px;
+}
+
+.maincontent .row .col-12 .panel .form-group .form-control {
+    height: 40px;
+    outline: none;
+    margin-left: 60%;
+}
+
+.maincontent .row .col-12 .panel .form-group .key-search{
+    width: 60px;
+    height: 35px;
+    border:solid 1px #398439;
+    border-radius: 10%;
+    color:white;
+    background: #afafaf;
+}
+
+.maincontent .row .col-12 .panel .form-group .search{
+    width: 60px;
+    height: 40px;
+    background: #337ab7;
+    border: solid 1px #204d74;
+    outline: none;
+    border-radius: 8%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+    cursor: pointer;
+}
+
+.maincontent .row .col-12 .panel .form-group .search:hover{
+    background:#286090;
+    cursor: pointer;
+}
+
+.maincontent .panel table{
+    width: 100%;
+    height: 650px;
+    margin:auto;
+    border-collapse: collapse;
+}
+.maincontent .panel table tr{
+    width: 100%;
+    height: 100px;
+    border-bottom: solid 1px #ffcece;
+}
+.maincontent .panel table tr:first-child{
+    font-weight: bold;
+}
+.maincontent .panel table tr td{
+    text-align: center;
+    border:none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.maincontent .panel table tr .table-content{
+    padding-left: 15px;
+}
+.maincontent .panel table tr td .book-number{
+    width: 100%;
+    padding-right: 15%;
+}
+.maincontent .panel table tr:first-of-type{
+    height: 60px;
+}
+.maincontent .panel table tr:last-of-type{
+    border-bottom: none;
+}
+.maincontent .panel table tr td .table-list{
+    margin-left: -90px;
+}
+.maincontent .panel table tr td .table-list .table-number{
+    padding-left: 24px;
+
+}
+.maincontent .panel table tr td img{
+    width: 55px;
+    height: 75px;
+}
+.maincontent .panel table tr td ul{
+    width: 120px;
+    display: block;
+    margin-left:28%;
+}
+.maincontent .panel table tr td ul>.opera{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border:solid 1px #cbcbcb;
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.maincontent .panel table tr td ul>.opera:hover{
+    background: #c6c6c6;
+}
+.maincontent .panel table tr:hover{
+    background: #def2ec;
+}
+/*checkbox样式*/
+.maincontent .panel  label{
+    position: relative;
+    height: 30px;
+}
+.maincontent .panel .rember{
+    opacity: 0;
+    position: absolute;
+    float: left;
+
+}
+.maincontent .panel  table tr td input[type=checkbox] ~ span.checked,
+.maincontent .panel  table tr td input[type=checkbox]:checked ~ span.unchecked{
+    display: none;
+    position: absolute;
+    left:20px;
+}
+.maincontent .panel  table tr td input[type=checkbox] ~ span.unchecked,
+.maincontent .panel  table tr td input[type=checkbox]:checked ~ span.checked{
+    display: inline-block;
+    position: absolute;
+    left:-20px;
+}
+.maincontent .panel  table tr td input[type=checkbox] ~ span.checked:hover,.loginform .panel .formcontrol table tr td input[type=checkbox] ~ span.unchecked:hover{
+    cursor: pointer;
+}
+
+
+.maincontent .panel .m-page{
+    width: 100%;
+    /*background-color: #ededed;*/
+    position: relative;
+}
+.maincontent .panel .m-page .batch-delete,ul.t-page{
+    display: inline-block;
+}
+.maincontent .panel .m-page ul.t-page > li{
+    float: left;
+}
+.maincontent .panel .m-page .batch-delete,.cancel-hide{
+    width: 65px;
+    height: 40px;
+    background: #337ab7;
+    border: solid 1px #204d74;
+    outline: none;
+    border-radius: 8%;
+    text-align: center;
+    line-height: 40px;
+   /* font-weight: bold;*/
+    font-size: 14px;
+    color:white;
+    margin-left: 30px;
+    float:left;
+}
+.maincontent .panel .m-page .batch-delete{
+    background: #2b542c;
+}
+.maincontent .panel .m-page .cancel-hide{
+    margin-left: 20px;
+}
+
+.maincontent .panel .m-page .cancel-hide:hover{
+    background:#286090;
+    cursor: pointer;
+}
+
+
+.maincontent .panel .m-page .batch-delete:hover{
+    background: #ad0404;
+    border: solid 1px #adadad;
+    cursor: pointer;
+}
+.maincontent .panel .m-page ul.t-page{
+    margin-left:30%;
+}
+.maincontent .panel .m-page ul.t-page > .page{
+    width: 40px;
+    height: 30px;
+    margin-left:5px;
+    text-align: center;
+    line-height: 30px;
+}
+.maincontent .panel .m-page ul.t-page > .page.active{
+    background: #cbcbcb;
+}
+.maincontent .panel .m-page ul.t-page > .page:hover{
+    background: #cbcbcb;
+    cursor: pointer;
+}
+.maincontent .panel .m-page .f-page{
+    float: right;
+    margin-right: 50px;
+}
+.maincontent .panel .m-page .f-page .page-input{
+    width: 30px;
+    height: 20px;
+}
+
+.maincontent .panel .m-page .t-page .active{
+    color:blue;
+}
+
+.maincontent .panel .m-page .t-page .active:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.maincontent .panel .m-page .t-page span{
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

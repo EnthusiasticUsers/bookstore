@@ -1,0 +1,58 @@
+aside .left-main{
+    width:180px;
+    height: 745px;
+    margin:10px 0 0 10px;
+    border:solid 1px #ac9898;
+    border-radius: 10px;
+}
+aside .left-main .left-head{
+    height: 40px;
+    background: #ac9898;
+    border-radius:10px 10px 0 0;
+    border-bottom: dashed 1px white;
+    color:white;
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+aside .left-main .left-body .level-one dl,dd{
+    margin:0;
+}
+aside .left-main .left-body{
+    height: 718px;
+}
+aside .left-main .left-body .level-one{
+    width:160px;
+    margin:auto;
+    padding: 8px;
+    font-size: 14px;
+
+}
+aside .left-main .left-body .level-one:not(.last-one){
+    border-bottom: dotted 1px #977e7e;
+}
+aside .left-main .left-body .level-one dt{
+    margin:2px;
+}
+aside .left-main .left-body .level-one dt span{
+    color:#977e7e;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+
+
+}
+aside .left-main .left-body .level-one dd{
+    font-size: 6px;
+}
+aside .left-main .left-body .level-one a{
+    color:#977e7e;
+    text-decoration: none;
+    margin-left:5px;
+}
+aside .left-main .left-body .level-one dd a:hover{
+    color: #9c9c08;
+    font-weight: bold;
+}

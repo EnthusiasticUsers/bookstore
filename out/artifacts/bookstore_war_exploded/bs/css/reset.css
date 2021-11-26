@@ -1,0 +1,216 @@
+/*主体样式*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+
+
+/*二级导航下a标签属性*/
+ .left .navlist .active a{
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/*二级导航下 li之下的active类选择器*/
+ .left .navlist > .active{
+    display: block;
+    margin-top:20px;
+    overflow: hidden;
+}
+
+
+
+/*箭头*/
+ .left .navlist .active .clearfix .list{
+    float: right;
+    margin-right: 15px;
+}
+
+/*文字图标*/
+ .left .navlist .active .clearfix span{
+    color:white;
+    font-size: 20px;
+    margin-left:25px;
+}
+
+/*字体 --- 功能介绍*/
+ .left .navlist .active .clearfix .title{
+
+}
+
+/*二级导航下的li样式*/
+ .left .navlist .active .sublist > li{
+    display: block;
+    width: 100%;
+    padding:8px;
+    margin-top:10px;
+}
+
+ .left .navlist .active .sublist > li a{
+    display: block;
+    margin-left:50px;
+}
+/*二级导航下的 ul li a样式*/
+ .left .navlist .active .sublist a{
+    font-size: 14px;
+}
+
+/*第一个二级导航 .sublist 显示*/
+ .left .navlist .active .sublist.active{
+    display: block;
+}
+
+/*二级导航下的 ul 样式*/
+ .left .navlist .active .sublist{
+    display: none;
+}
+
+/*二级导航 --- 鼠标移入*/
+ .left .navlist .active:hover .sublist{
+    display: block;
+}
+
+.left .navlist .active .sublist > li.active{
+    background: #374c61;
+}
+
+/*鼠标移入二级导航 ul li ul li 改变背景色*/
+ .left .navlist .active .sublist > li:hover{
+    background: #374c61;
+}
+
+/*二级导航前 before属性*/
+ .left .navlist .active .sublist > li{
+    position: relative;
+}
+ .left .navlist .active .sublist > li a:before{
+    content:"";
+    width: 10px;
+    height: 10px;
+    background: #0c5460;
+    border-radius: 50%;
+    position: absolute;
+    left:28px;
+}
+ .left .navlist .active .sublist > li a:after{
+    content:"";
+    width: 1px;
+    height: 45px;
+    background: #0c5460;
+    position: absolute;
+    left:32px;
+    top:0;
+}
+
+/*页脚*/
+ .left ul.footer-ul{
+    position: fixed;
+    left:0;
+    bottom:0;
+}
+ .left ul.footer-ul li.footer-li{
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+
+}
+.left ul.footer-ul li.footer-li span{
+    color: #4b596c;
+    font-size: 20px;
+}
+
+.left ul.footer-ul li.footer-li:hover{
+    background: #3e546c;
+    color: #28426c;
+}
+.left ul.footer-ul li.footer-li:hover span{
+    color:white;
+}
+
+/*右主体部分*/
+.main header{
+    height: 80px;
+    background:#ededed;
+    overflow: hidden;
+    position: relative;
+}
+.main header .nav{
+   padding-top:15px;
+   padding-left:15px;
+}
+.main header .nav span{
+    font-size: 25px;
+    color: #56708b;
+    cursor: pointer;
+}
+.main header .envelope{
+    float: right;
+    margin-top:-20px;
+    margin-right:12%;
+}
+.main header .envelope span{
+    font-size: 22px;
+    color: #c2c2c2;
+    cursor: pointer;
+}
+.main header .admin{
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.main header .admin .nav-pic{
+    width: 30px;
+    height: 30px;
+    background:url("../../image/touxiang.jpg") no-repeat 0 0/30px 30px;
+    border-radius: 50%;
+    margin-top:-20px;
+    float: left;
+}
+.main header .admin .nav-welcome,.nav-list{
+    margin-top:-18px;
+    float: left;
+}
+
+.main header .message{
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    color:white;
+    background: #19bb9c;
+    border-radius: 50%;
+    position: absolute;
+    top:24px;
+    right:25.5%;
+    z-index: 999;
+}
+
+.main section.maincontent{
+    height: 760px;
+}
+.main > footer{
+    position: fixed;
+    bottom:0;
+    width: 85%;
+    height: 35px;
+    background: #0acbc7;
+}
+.main > footer span.name{
+    display: block;
+    width: 350px;
+    height: 57px;
+    font-size: 14px;
+    color: #fdf4f4;
+    cursor: pointer;
+    margin-left:498px;
+    padding-top:10px;
+}

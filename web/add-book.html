@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2011102030谢克力</title>
+    <link rel="stylesheet" href="bs/css/font-awesome.css">
+    <link rel="stylesheet" href="bs/font/css/font-awesome.css">
+    <link rel="stylesheet" href="bs/font/fonts/fontawesome-webfont.ttf">
+    <link rel="stylesheet" href="bs/css/layout.css">
+    <link rel="stylesheet" href="bs/css/reset.css">
+    <link rel="stylesheet" href="bs/css/main.css">
+    <link rel="stylesheet" href="bs/css/add-class.css">
+    <link rel="stylesheet" href="bs/css/add-book.css">
+    <link rel="stylesheet" href="bs/css/fileUpload.css">
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/base64.js"></script>
+    <script src="bs/js/add-book.js"></script>
+</head>
+<body>
+
+<!--左侧边栏-->
+<div class="left col-2">
+    <!--左头部-->
+    <header>
+        <div class="pic"></div>
+        <div class="welcome">
+            欢迎你  <span class="user"></span>
+        </div>
+        <div class="name">
+            超级管理员
+        </div>
+        <div class="role">
+            <span><i class="fa fa-home"></i></span><a href="index.html">首页</a>
+        </div>
+    </header>
+
+    <!--中间主体部分-->
+    <ul class="navlist">
+        <li class="active">
+            <h2 class="clearfix">
+                <span><i class="fa fa-bookmark"></i></span>
+                <a href="list-class.html" class="title">&nbsp图书类别管理</a>
+                <a href="" class="list"><i class="fa fa-angle-down"></i></a>
+            </h2>
+            <ul class="sublist">
+                <li><a href="list-class.html">图书类别列表</a></li>
+                <li><a href="add-class.html">添加图书类别</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <h2 class="clearfix">
+                <span><i class="fa fa-book"></i></span>
+                <a href="list-book.html" class="title">&nbsp图书信息管理</a>
+                <a href="" class="list"><i class="fa fa-angle-down"></i></a>
+            </h2>
+            <ul class="sublist active">
+                <li><a href="list-book.html">图书信息列表</a></li>
+                <li class="active"><a href="add-book.html">添加图书信息</a></li>
+                <li><a href="edit_book.html?id=1">修改图书信息</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <h2 class="clearfix">
+                <span><i class="fa fa-user"></i></span>
+                <a href="list-user.html" class="title">&nbsp用户信息列表</a>
+                <a href="" class="list"><i class="fa fa-angle-down"></i></a>
+            </h2>
+            <ul class="sublist">
+                <li><a href="list-user.html">所有用户列表</a></li>
+                <li><a href="list-admin.html">管理员列表</a></li>
+                <li><a href="add-admin.html">添加管理员</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <h2 class="clearfix">
+                <span><i class="fa fa-list-alt"></i></span>
+                <a href="list-order.html" class="title">&nbsp订单管理</a>
+                <a href="" class="list"><i class="fa fa-angle-down"></i></a>
+            </h2>
+            <ul class="sublist">
+                <li><a href="list-order.html">待处理订单列表</a></li>
+                <li><a href="list-finishedorder.html">已完成订单列表</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <h2 class="clearfix">
+                <span><i class="fa fa-ple-chart"></i></span>
+                <a href="chart-trend.html" class="title">&nbsp统计分析</a>
+                <a href="" class="list"><i class="fa fa-angle-down"></i></a>
+            </h2>
+            <ul class="sublist">
+                <li><a href="chart-trend.html">销售走势分析</a></li>
+                <li><a href="chart-class.html">分类统计</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--左页脚-->
+    <footer>
+        <ul class="footer-ul">
+            <li class="footer-li"><span><i class="fa fa-cog"></i></span></li>
+            <li class="footer-li"><span><i class="fa fa-arrows-alt"></i></span></li>
+            <li class="footer-li"><span><i class="fa fa-eye"></i></span></li>
+            <li class="footer-li"><span><i class="fa fa-gear"></i></span></li>
+        </ul>
+    </footer>
+</div>
+
+<!--右边主体部分-->
+<div class="main col-10">
+    <!--右头部-->
+    <header>
+        <div class="nav">
+            <span><i class="fa fa-navicon"></i></span>
+        </div>
+        <div class="admin">
+            <div class="nav-pic"></div>
+            <div class="nav-welcome">
+                &nbsp <span class="user"></span>
+            </div>
+            <a href="" class="nav-list"><i class="fa fa-angle-down"></i></a>
+        </div>
+        <div class="envelope">
+            <span><i class="fa fa-envelope"></i></span>
+        </div>
+
+        <!--信息条数-->
+        <span class="message">6</span>
+    </header>
+
+    <!--右主要显示页面-->
+    <section class="maincontent">
+        <div class="row">
+            <div class="col-12">
+                <div class="panel">
+                    <div class="title">
+                        <h2>添加图书信息</h2>
+                    </div>
+                    <div class="content">
+                        <form id="myForm">
+                            <div class="form-group">
+                                <div class="col-3 title">
+                                    <label for="menu">
+                                        所属分类
+                                    </label>
+                                </div>
+                                <div class="col-9">
+                                    <select class="form-control col-9" name="menu" id="menu">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-3 title">
+                                    <label>书名</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control col-9" type="text" placeholder="请输入图书名" id="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-3 title">
+                                    <label>图书价格</label>
+                                </div>
+                                <div class="col-9">
+                                    <input class="form-control col-9" type="text" placeholder="请输入图书价格" id="price">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!--文件上传-->
+                                <div class="wrapper">
+                                    <p id="previewImage"></p>
+                                    <div class="col-3 title">
+                                        <label>文件上传</label>
+                                    </div>
+                                    <input type="file" id="imageFile"  accept="image/jpeg">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-btn col-6">
+                                    <input class="btn-1" type="button" value="提交">
+                                    <input type="reset" value="重写">
+                                    <input type="reset" value="取消">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--右页脚-->
+    <footer>
+        <span class="name">
+            ©杭州职业技术学院 软件2012 2011102030谢克力
+        </span>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* 背景色 */
+body{
+    background:rgb(41,63,84);
+}
+
+/* 主体盒子 */
+.loginform .panel{
+    width:300px;
+    height: 500px;
+    margin:auto;
+    padding: 20px;
+    border:solid 1px white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px #29bbb0;
+    color:white;
+}
+
+
+
+/* 图片Logo */
+.loginform .logo{
+    text-align: center;
+}
+.loginform .logo .img{
+    width:90%;
+}
+
+/* 登录文本框 */
+.loginform .panel .formcontrol.movetext {
+    height: 63px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.loginform .panel .formcontrol.movetext input{
+    display: block;
+    font-size: 18px;
+    outline: 0;
+    border:none;
+    background:none;
+    border-bottom: solid 1px white;
+    width:100%;
+    margin-top:30px;
+    color:white;
+}
+
+/* 获取焦点和检测文本样式 */
+.loginform .panel .formcontrol.movetext input:focus{
+	border-bottom: solid 3px white;
+}
+.loginform .panel .formcontrol.movetext input:focus+label,.loginform .panel .formcontrol.movetext input:valid+label{
+    top:0;
+    font-size: 14px;
+}
+.loginform .panel .formcontrol.movetext label{
+    display: block;
+    color:white;
+    position: absolute;
+    top:20px;
+}
+
+
+.loginform .panel .formcontrol{
+    width: 100%;
+    height: 40px;
+}
+.loginform .panel .formcontrol.movetext .panel-input-password > span{
+    font-size: 14px;
+}
+.loginform .panel .formcontrol .loginbtn{
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    border:solid 1px white;
+    border-radius: 5px;
+}
+
+/* checkbox样式 */
+.loginform .panel .formcontrol{
+
+}
+.loginform .panel .formcontrol label{
+    position: relative;
+    height: 30px; 
+}
+.loginform .panel .formcontrol .rember{
+    opacity: 0;
+    position: absolute;
+    float: left;
+}
+.loginform .panel .formcontrol .check-content{
+	margin-left:20px;
+}
+.loginform .panel .formcontrol input[type=checkbox] ~ span.checked,
+.loginform .panel .formcontrol input[type=checkbox]:checked ~ span.unchecked{
+    display: none;
+    color:aqua;
+    position: absolute;
+
+}
+.loginform .panel .formcontrol input[type=checkbox] ~ span.unchecked,
+.loginform .panel .formcontrol input[type=checkbox]:checked ~ span.checked{
+    display: inline-block;
+    color:aqua;
+    position: absolute;
+}
+ .loginform .panel .formcontrol input[type=checkbox] ~ span.checked:hover,.loginform .panel .formcontrol input[type=checkbox] ~ span.unchecked:hover{
+    color:#29bbb0;
+    cursor: pointer;
+}  
+
+
+/* 按钮样式 */
+.loginform .panel .formcontrol .loginbtn:hover{
+    box-shadow: 0 0 10px 3px #29bbb0;
+    color:red;
+}
+
+/* 忘记密码 + 注册样式 */
+.loginform .panel .formcontrol.a{
+    text-align: center;
+}
+.loginform .panel .formcontrol a{
+    color:white;
+    text-decoration: none;
+}
+.loginform .panel .formcontrol a:hover{
+    color:red;
+}
+
+/* 页脚 */
+.footer{
+    width:340px;
+    padding-top:15px;
+    margin:auto;
+    overflow: hidden;
+    text-align: center;
+}
+.footer .author{
+    color:white;
+    font-size: 14px;
+}
+
+
+
+
