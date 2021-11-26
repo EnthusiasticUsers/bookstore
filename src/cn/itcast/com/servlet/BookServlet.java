@@ -86,6 +86,7 @@ public class BookServlet extends HttpServlet {
             System.out.println("error:" + status);
         }
 
+
         //返回json
         response.setContentType("application/json;charset=utf-8");
         response.getWriter().write(json);
