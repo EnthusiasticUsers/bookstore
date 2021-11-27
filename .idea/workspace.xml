@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51da0e92-a4ad-4899-b0e1-338edae3b789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/CartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/CartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/CartServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +306,8 @@
       <workItem from="1637471733958" duration="15249000" />
       <workItem from="1637640303764" duration="3818000" />
       <workItem from="1637709416936" duration="2704000" />
-      <workItem from="1637943959883" duration="993000" />
+      <workItem from="1637943959883" duration="1467000" />
+      <workItem from="1637982192023" duration="746000" />
     </task>
     <servers />
   </component>
@@ -316,7 +319,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
