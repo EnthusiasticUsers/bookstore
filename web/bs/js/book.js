@@ -274,6 +274,7 @@ $(function () {
                     data[i].type = data[i].type.replaceAll(key, "<span style='font-weight:bold;color:red'>" + key + "</span>");
             }
         }
+        return data;
     }
 
     //自动触发点击事件
