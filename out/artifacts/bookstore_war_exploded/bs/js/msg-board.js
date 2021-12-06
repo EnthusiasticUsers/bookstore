@@ -36,18 +36,18 @@ function getMsgFn(base64){
         processData: false,
         data:formData,
         success:function (data) {
-            $(data).each(function () {
+            $(data).each(function (i) {
                 var msg = $(" <li>\n" +
                     "                       <div class=\"msg\">\n" +
                     "                           <p>\n" +
-                    "                                <div class=\"title\"><label>标题:</label><span >" + this.title + " </span></div>\n" +
-                    "                                <div class=\"author\"><label>作者:</label><span >" + this.author + "</span></div>\n" +
+                    "                                <div class=\"title\"><label>标题:</label><span >" + data[i].title + " </span></div>\n" +
+                    "                                <div class=\"author\"><label>作者:</label><span >" + data[i].author + "</span></div>\n" +
                     "                           </p>\n" +
-                    "                           <div class=\"content\"><label class='key'>留言:</label>" + this.content + "</div>\n" +
+                    "                           <div class=\"content\"><label class='key'>留言:</label>" + data[i].content + "</div>\n" +
                     "                           <p class='msg-bottom'>\n" +
-                    "                               <span><i class=\"fa fa-thumbs-o-up\"></i>点赞" + this.thumbs_up + "</span>\n" +
-                    "                               <span><i class=\"fa fa-thumbs-o-down\"></i>点踩" + this.thumbs_down + " </span>\n" +
-                    "                               <label>时间:</label><span class=\"time\">" + this.time + " </span>\n" +
+                    "                               <span><i class=\"fa fa-thumbs-o-up\"></i>点赞" + data[i].thumbs_up + "</span>\n" +
+                    "                               <span><i class=\"fa fa-thumbs-o-down\"></i>点踩" + data[i].thumbs_down + " </span>\n" +
+                    "                               <label>时间:</label><span class=\"time\">" + data[i].time + " </span>\n" +
                     "                           </p>\n" +
                     "                       </div>\n" +
                     "                   </li>");
@@ -60,6 +60,9 @@ function getMsgFn(base64){
 }
 
 $(function () {
+
+
+
     var base64 = new Base64();
     getMsgFn(base64);//渲染留言信息
 

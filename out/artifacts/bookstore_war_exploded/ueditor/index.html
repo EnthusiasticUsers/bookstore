@@ -17,9 +17,10 @@
 </head>
 <body>
 <div>
+    <h1>完整demo</h1>
     <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
 </div>
-<div id="btns">
+<!--<div id="btns">
     <div>
         <button onclick="getAllHtml()">获得整个html的内容</button>
         <button onclick="getContent()">获得内容</button>
@@ -48,13 +49,13 @@
         <button onclick="clearLocalData()" >清空草稿箱</button>
     </div>
 
-</div>
-<div>
+</div>-->
+<!--<div>
     <button onclick="createEditor()"/>
     创建编辑器</button>
     <button onclick="deleteEditor()"/>
     删除编辑器</button>
-</div>
+</div>-->
 
 </body>
 <script type="text/javascript">
@@ -88,7 +89,7 @@
         arr.push("使用editor.getContent()方法可以获得编辑器的内容");
         arr.push("内容为：");
         arr.push(UE.getEditor('editor').getContent());
-        alert(arr.join("\n"));
+        return arr.join("\n");
     }
     function getPlainTxt() {
         var arr = [];

@@ -26,6 +26,8 @@ $(function () {
             contentType : false,
             data:formData,
             success:function (data) {
+                //替换关键字
+                data = replaceKeyFn(key, data);
                 //直接对接收的数据进行分页
                 var currentPage = 1;//当前页
                 var size = 5;//每页显示几条数据
@@ -190,7 +192,7 @@ $(function () {
                         //修改图书信息
                         $(".edit_book").bind("click",function () {
                             var id = $(this).attr("num");
-                            window.location.href = "edit_book.html?id=" + id;
+                            window.location.href = "edit-book.html?id=" + id;
                         });
 
                         //先解除事件,避免点击依次执行多次删除事件
@@ -260,6 +262,19 @@ $(function () {
             }
         });
         return list;
+    }
+
+    //将关键字以红色特殊字体显示
+    function replaceKeyFn(key, data){
+        for(var i = 0; i < data.length; i++){
+            if(key !== ""){
+                data[i].name = data[i].name.replaceAll(key, "<span style='font-weight:bold;color:red'>" + key + "</span>");
+                data[i].price = (data[i].price+"").replaceAll(key, "<span style='font-weight:bold;color:red'>" + key + "</span>");
+                if(isNaN(data[i].type))
+                    data[i].type = data[i].type.replaceAll(key, "<span style='font-weight:bold;color:red'>" + key + "</span>");
+            }
+        }
+        return data;
     }
 
     //自动触发点击事件
