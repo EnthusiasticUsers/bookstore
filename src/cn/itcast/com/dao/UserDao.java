@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public interface UserDao {
 
     //登录验证
-    public boolean login(String username,String password);
+    public User login(String username,String password);
 
     //注册
     public boolean register(User user) throws SQLException;

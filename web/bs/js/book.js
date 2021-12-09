@@ -1,16 +1,6 @@
 $(function () {
+    //实例化base64
     var base = new Base64();
-    var status = base.encode("session");
-    //查找session中的[username,password],存在则放入input中
-    $.post("user",{status:status},function (data) {
-        if(data.code === 500){
-            window.location.href = "login.html";
-        }else{
-          $(".user").html(data.username);
-        }
-    });
-
-
 
     //获取图书信息
     $("#search").click(function () {
@@ -145,7 +135,7 @@ $(function () {
                             "                                    <span class=\"table-number\">" + data[i].id + "</span>\n" +
                             "                                </div>\n" +
                             "                            </td>\n" +
-                            "                            <td><img src=\"image/" + data[i].image + "\" alt=\"\"></td>\n" +
+                            "                            <td><img src=\"" + data[i].image + "\" alt=\"\"></td>\n" +
                             "                            <td>" + data[i].name + "</td>\n" +
                             "                            <td>￥" + data[i].price + "</td>\n" +
                             "                            <td>" + data[i].type + "</td>\n" +

@@ -170,10 +170,14 @@
 .main header .admin .nav-pic{
     width: 30px;
     height: 30px;
-    background:url("../../image/touxiang.jpg") no-repeat 0 0/30px 30px;
     border-radius: 50%;
     margin-top:-20px;
     float: left;
+}
+.main header .admin .nav-pic img{
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
 }
 .main header .admin .nav-welcome,.nav-list{
     margin-top:-18px;

@@ -32,13 +32,12 @@ public class UserServlet extends HttpServlet {
         //返回json
         String json = "";
         if(status.equals("login")){
-            request.getSession().setAttribute("username", username);
-            request.getSession().setAttribute("password", password);
-            boolean flag = userService.login(username, password);
-            if(flag){
+            User user = userService.login(username, password);
+            if(user != null){
+                request.getSession().setAttribute("user", user);
                 json = StatusUtil.success("登录成功");
             }else{
-                json = StatusUtil.failed("登陆失败");
+                json = StatusUtil.failed("登陆失败:用户名或密码错误!");
             }
         }else if(status.equals("register")){
             String sex = request.getParameter("sex");
@@ -63,17 +62,9 @@ public class UserServlet extends HttpServlet {
                 json = StatusUtil.failed("注册失败");
             }
         }else if(status.equals("session")){
-            username = (String) request.getSession().getAttribute("username");
-            password = (String) request.getSession().getAttribute("password");
+            User user = (User) request.getSession().getAttribute("user");
             response.setContentType("application/json;charset=utf-8");
-            if(username != null && password != null){
-                User user = new User();
-                user.setUsername(username);
-                user.setPassword(password);
-                json = JsonUtil.objToStr(user);
-            }else{
-                json = StatusUtil.failed("获取失败");
-            }
+            json = JsonUtil.objToStr(user);
         }
 
         //设置返回响应头

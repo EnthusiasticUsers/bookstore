@@ -12,15 +12,21 @@ body{
     overflow: hidden;
 }
 .left header .pic{
-    width: 55px;
-    height: 55px;
-    background:url("../../image/touxiang.jpg") no-repeat 0 0/55px 55px;
+    width: 65px;
+    height: 65px;
     border: solid 5px white;
     border-radius: 50%;
     margin-top:20px;
     margin-left:30px;
     float: left;
 }
+.left header .pic img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    float: left;
+}
+
 
 .left header .welcome{
     width: 80px;

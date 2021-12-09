@@ -15,16 +15,10 @@ public class UserTest {
     @Test
     public void test1() throws JsonProcessingException {
         String username = "admin";
-        String password = "123";
+        String password = "12";
         String user_info = null;
-        boolean res = userService.login(username, password);
-        if (res) {
-            user_info = StatusUtil.success("登录成功");
-        } else {
-            user_info = StatusUtil.failed("登录失败");
-        }
-
-        String string = objectMapper.writeValueAsString(user_info);
+        User user = userService.login(username, password);
+        String string = JsonUtil.objToStr(user);
         System.out.println(string);
 
     }
@@ -34,8 +28,6 @@ public class UserTest {
         String username = "admin";
         String password = "1234";
         User user = new User();
-        //user.setUsername(username);
-        //user.setPassword(password);
         String str = JsonUtil.objToStr(user);
         System.out.println(str);
     }

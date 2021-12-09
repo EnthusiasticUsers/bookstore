@@ -13,7 +13,6 @@ public class BoardTest {
     @Test
     public void test01(){
         List<Board> boards = boardService.selectByKey(null);
-
         for(Board board : boards){
             System.out.println(board);
         }

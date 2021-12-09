@@ -9,6 +9,7 @@ import java.util.Date;
 
 public class Board {
     private Integer id;
+    private String portrait;
     private String title;
     private String author;
     private String content;
@@ -23,6 +24,14 @@ public class Board {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getPortrait() {
+        return portrait;
+    }
+
+    public void setPortrait(String portrait) {
+        this.portrait = portrait;
     }
 
     public String getTitle() {
@@ -77,6 +86,7 @@ public class Board {
     public String toString() {
         return "Board{" +
                 "id=" + id +
+                ", portrait='" + portrait + '\'' +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
                 ", content='" + content + '\'' +

@@ -7,29 +7,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51da0e92-a4ad-4899-b0e1-338edae3b789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/BoardDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/BoardDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/Board.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/impl/BoardServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BoardServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/test/BoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/ueditor/Uploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/clientSideInclude.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/session.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/image/tx/tx1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/left.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/reply.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet_session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/add-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/add-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/msg-board.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/msg-board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/add-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/add-book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit_book.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/edit-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/edit-book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/msg-board.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/msg-board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/touxiang.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/list-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/list-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/msg-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/msg-board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/BoardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/BoardDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/test/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/test/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/test/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/test/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/RegisterServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/UserServlet_session.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/add-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/add-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/layout.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/css/msg-board.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/msg-board.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/js/add-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/add-book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/js/edit-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/edit-book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/msg-board.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/msg-board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/edit-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/touxiang.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/tx2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/list-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/list-book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/msg-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/msg-board.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/ueditor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/ueditor/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,11 +88,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -93,20 +136,21 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\src" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\WEB-INF\lib" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\bs\js" />
-      <recent name="C:\Users\23352\IdeaProjects\bookstore\web\bs\css" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.itcast.com.util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image\tx" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\ueditor" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\bs\js" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image" />
@@ -142,22 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bookstore" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.itcast.com.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.itcast.com.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.com.test.BookTest" />
-      <option name="METHOD_NAME" value="test01" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BookTest.test04" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookstore" />
       <extension name="coverage">
@@ -185,6 +213,22 @@
       <option name="PACKAGE_NAME" value="cn.itcast.com.test" />
       <option name="MAIN_CLASS_NAME" value="cn.itcast.com.test.HobbyTest" />
       <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bookstore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.com.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.com.test.UserTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -281,20 +325,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BookTest.test01" />
       <item itemvalue="JUnit.BookTest.test04" />
       <item itemvalue="JUnit.HobbyTest.test01" />
       <item itemvalue="JUnit.UserTest.test2" />
       <item itemvalue="JUnit.BoardTest.test01" />
+      <item itemvalue="JUnit.UserTest.test1" />
       <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest.test1" />
         <item itemvalue="JUnit.BoardTest.test01" />
         <item itemvalue="JUnit.UserTest.test2" />
         <item itemvalue="JUnit.BookTest.test04" />
         <item itemvalue="JUnit.HobbyTest.test01" />
-        <item itemvalue="JUnit.BookTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -336,6 +380,11 @@
       <workItem from="1638616922941" duration="4627000" />
       <workItem from="1638760093514" duration="14027000" />
       <workItem from="1638805474730" duration="222000" />
+      <workItem from="1638834574782" duration="2127000" />
+      <workItem from="1638837061660" duration="2309000" />
+      <workItem from="1638839719238" duration="16511000" />
+      <workItem from="1638937982511" duration="13419000" />
+      <workItem from="1639015382021" duration="6173000" />
     </task>
     <servers />
   </component>
@@ -354,5 +403,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>

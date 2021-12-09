@@ -23,7 +23,11 @@ public class BoardDaoImpl implements BoardDao {
         if(key == null) key = "%%";
         else key = "%" + key + "%";
         JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
-        String sql = "select * from board where title like ? or author like ? or content like ?";
+        String sql = "select b.id,b.title,b.content,b.thumbs_up,b.thumbs_down,b.time,u.username author,u.portrait " +
+                     "from " +
+                     "board b,user u " +
+                     "where " +
+                     "b.author = u.id and (title like ? or author like ? or content like ?)";
         return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Board.class), key, key, key);
     }
 

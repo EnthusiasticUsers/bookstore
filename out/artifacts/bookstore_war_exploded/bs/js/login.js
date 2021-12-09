@@ -26,9 +26,9 @@ $(function () {
                 if(data.code === 200){
                     $("#username").val("");
                     $("#password").val("");
-                    window.location.href = "list-book.html";
+                    window.location.href = "msg-board.html";
                 }else{
-                    alert(data.code + ":" + data.msg);
+                    alert(data.msg);
                 }
             },
             error:function (data) {

@@ -5,35 +5,27 @@ import cn.itcast.com.domain.Hobby;
 import cn.itcast.com.domain.User;
 import cn.itcast.com.util.DruidUtil;
 import org.springframework.dao.DataAccessException;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserDaoImpl implements UserDao {
 
     @Override
-    public boolean login(String username, String password) {
-        Connection conn = null;
-        PreparedStatement ptmt = null;
-        ResultSet rs = null;
+    public User login(String username, String password) {
         try {
-            conn = DruidUtil.getConnection();
-            String sql = "select username,password from user where username = ? and password = ?";
-            ptmt = conn.prepareStatement(sql);
-            ptmt.setString(1,username);
-            ptmt.setString(2,password);
-            rs = ptmt.executeQuery();
-            return rs.next();
-        } catch (SQLException e) {
+            JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
+            String sql = "select * from user where username = ? and password = ?";
+            return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<>(User.class), username, password);
+        } catch (DataAccessException e) {
             e.printStackTrace();
-        }finally {
-            DruidUtil.close(ptmt,conn,rs);
         }
-
-        return false;
+        return null;
     }
 
     @Override

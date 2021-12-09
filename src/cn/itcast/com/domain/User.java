@@ -7,6 +7,7 @@ public class User {
     private Integer id;
     private String username;
     private String password;
+    private String portrait;
     private Integer sex;
     private Integer degree;
     private List<Hobby> hobbies;
@@ -29,6 +30,14 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public String getPortrait() {
+        return portrait;
+    }
+
+    public void setPortrait(String portrait) {
+        this.portrait = portrait;
     }
 
     public void setPassword(String password) {
@@ -65,6 +74,7 @@ public class User {
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", portrait='" + portrait + '\'' +
                 ", sex=" + sex +
                 ", degree=" + degree +
                 ", hobbies=" + hobbies +

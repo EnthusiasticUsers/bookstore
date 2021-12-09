@@ -8,17 +8,8 @@ $(function () {
        fileReader.readAsDataURL(imageFile);
    });*/
 
-    //查找session中的[username,password],存在则放入input中
+    //实例化base64
     var base = new Base64();
-    var status = base.encode("session");
-    //查找session中的[username,password],存在则放入input中
-    $.post("user",{status:status},function (data) {
-        if(data.code === 500){
-            window.location.href = "login.html";
-        }else{
-            $(".user").html(data.username);
-        }
-    });
 
     $.post("book/type/show",function (data) {
         $menu = $("#menu");
@@ -77,7 +68,8 @@ $(function () {
                     alert(data.msg);
                 },
                 error:function (data) {
-                    alert(data.status);
+                    console.log(data);
+                    alert(data.status + "|" + data.responseText);
                 }
             })
         }

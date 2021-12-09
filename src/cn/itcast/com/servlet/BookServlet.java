@@ -4,6 +4,7 @@ import cn.itcast.com.domain.Book;
 import cn.itcast.com.service.impl.BookServiceImpl;
 import cn.itcast.com.util.JsonUtil;
 import cn.itcast.com.util.StatusUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -42,68 +43,34 @@ public class BookServlet extends HttpServlet {
         //初始化返回json
         String json = "";
         //选择操作
-        do{
-            if(status.equals("show")){
-                books = bookService.selectByKey(key);
-                json = JsonUtil.objToStr(books);
-                break;
-            }
-
-            if(status.equals("add")){
-                Part imageFile = request.getPart("imageFile");
-                String image = UUID.randomUUID() + getFileName(imageFile);
-                Book book = getBook(name, price, image, type, imageFile);
-                boolean flag = bookService.add(book);
-                if(flag){
-                    json = StatusUtil.success("插入图书信息成功!");
-                }else{
-                    json = StatusUtil.failed("插入图书信息失败!");
-                }
-                break;
-            }
-
-            if(status.equals("update")){
-                Part imageFile = request.getPart("imageFile");
-                String image = UUID.randomUUID() + getFileName(imageFile);
-                Book book = getBook(name, price, image, type, imageFile);
-                boolean flag = bookService.add(book);
-                if(flag){
-                    json = StatusUtil.success("修改图书信息成功!");
-                }else{
-                    json = StatusUtil.failed("修改图书信息失败!");
-                }
-                break;
-            }
-
-            if(status.equals("delete")){
-                boolean flag = bookService.delete(Integer.parseInt(id));
-                if(flag){
-                    json = StatusUtil.success("删除图书信息成功!");
-                }else{
-                    json = StatusUtil.failed("删除图书信息失败!");
-                }
-                break;
-            }
-
-            if(status.equals("id")){
-                books = bookService.selectById(Integer.parseInt(id));
-                json = JsonUtil.objToStr(books);
-                break;
-            }
-
-            if(status.equals("batchDelete")){
-                books = JsonUtil.strToObjList(ids, Book.class);
-                boolean flag = bookService.batchDelete(books);
-                if(flag){
-                    json = StatusUtil.success("批量删除图书信息成功!");
-                }else{
-                    json = StatusUtil.failed("批量删除图书信息失败!");
-                }
-                break;
-            }
-
-        }while (false);
-
+        if (status.equals("show")) {
+            books = bookService.selectByKey(key);
+            json = JsonUtil.objToStr(books);
+        } else if (status.equals("add")) {
+            Part imageFile = request.getPart("imageFile");
+            String image = getTheOnlyFileName(imageFile);
+            Book book = getBook(name, price, image, type, imageFile);
+            System.out.println(book);
+            boolean flag = bookService.add(book);
+            json = flag ? StatusUtil.success("插入图书信息成功!") : StatusUtil.failed("插入图书信息失败!");
+            System.out.println("json:" + json);
+        } else if (status.equals("update")) {
+            Part imageFile = request.getPart("imageFile");
+            String image = getTheOnlyFileName(imageFile);
+            Book book = getBook(name, price, image, type, imageFile);
+            boolean flag = bookService.update(book);
+            json = flag ? StatusUtil.success("修改图书信息成功!") : StatusUtil.failed("修改图书信息失败!");
+        } else if (status.equals("delete")) {
+            boolean flag = bookService.delete(Integer.parseInt(id));
+            json = flag ? StatusUtil.success("删除图书信息成功!") : StatusUtil.failed("删除图书信息失败!");
+        } else if (status.equals("id")) {
+            books = bookService.selectById(Integer.parseInt(id));
+            json = JsonUtil.objToStr(books);
+        } else if (status.equals("batchDelete")) {
+            books = JsonUtil.strToObjList(ids, Book.class);
+            boolean flag = bookService.batchDelete(books);
+            json = flag ? StatusUtil.success("批量删除图书信息成功!") : StatusUtil.failed("批量删除图书信息失败!");
+        }
 
         //返回json
         response.setContentType("application/json;charset=utf-8");
@@ -119,22 +86,24 @@ public class BookServlet extends HttpServlet {
     private Book getBook(String name, String price, String image, String type, Part imageFile) throws IOException {
         //获取真实路径
         String path = getServletContext().getRealPath("/image");
+        //设置图片url路径
+        String urlPath = "http://127.0.0.1/image/";
         //写入文件
         writeToFile(path, image, imageFile);
         Book book = new Book();
         book.setName(name);
         book.setPrice(Double.parseDouble(price));
-        book.setImage(image);
+        book.setImage(urlPath + image);
         book.setType(type);
         return book;
     }
 
-    private void writeToFile(String path,String fileName, Part part) throws IOException {
+    private void writeToFile(String path, String fileName, Part part) throws IOException {
         InputStream in = part.getInputStream();
         OutputStream out = new FileOutputStream(path + "//" + fileName);
         byte[] b = new byte[1024];
         int len = 0;
-        while((len = in.read(b)) != -1){
+        while ((len = in.read(b)) != -1) {
             out.write(b, 0, len);
         }
         in.close();
@@ -143,7 +112,12 @@ public class BookServlet extends HttpServlet {
 
     private String getFileName(Part part) {
         String head = part.getHeader("Content-Disposition");
-        return new Random().nextInt(10000) + head.substring(head.indexOf("filename=\"")+10, head.lastIndexOf("\""));
-
+        return head.substring(head.indexOf("filename=\"") + 10, head.lastIndexOf("\""));
     }
+
+    private String getTheOnlyFileName(Part part) {
+        String fileName = getFileName(part);
+        return System.currentTimeMillis() + new Random().nextInt(10000) + fileName;
+    }
+
 }
