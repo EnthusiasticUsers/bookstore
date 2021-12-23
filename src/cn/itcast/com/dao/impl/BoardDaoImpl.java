@@ -9,10 +9,10 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import java.util.List;
 
 public class BoardDaoImpl implements BoardDao {
+    private JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
 
     @Override
     public boolean insert(Board board) {
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
         String sql = "insert into board(title,author,content) values(?,?,?)";
         int count =  jdbcTemplate.update(sql, board.getTitle(), board.getAuthor(), board.getContent());
         return count > 0;
@@ -22,18 +22,16 @@ public class BoardDaoImpl implements BoardDao {
     public List<Board> selectByKey(String key) {
         if(key == null) key = "%%";
         else key = "%" + key + "%";
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
         String sql = "select b.id,b.title,b.content,b.thumbs_up,b.thumbs_down,b.time,u.username author,u.portrait " +
                      "from " +
                      "board b,user u " +
                      "where " +
-                     "b.author = u.id and (title like ? or author like ? or content like ?)";
+                     "b.author = u.id and (b.title like ? or u.username like ? or b.content like ?)";
         return jdbcTemplate.query(sql,new BeanPropertyRowMapper<>(Board.class), key, key, key);
     }
 
     @Override
     public boolean delete(Integer id) {
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
         String sql = "delete from board where id = ?";
         int count = jdbcTemplate.update(sql, id);
         return count > 0;
@@ -42,7 +40,6 @@ public class BoardDaoImpl implements BoardDao {
     @Override
     public boolean batchDelete(List<Board> boards) {
         boolean isDel = true;
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(DruidUtil.getDataSource());
         String sql = "delete from board where id = ?";
         for(Board board : boards){
             int count = jdbcTemplate.update(sql, board.getId());

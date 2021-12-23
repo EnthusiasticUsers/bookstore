@@ -1,3 +1,27 @@
 .maincontent .row .col-12 .panel .content{
-    height: 360px;
+    height: 450px;
+}
+.warpper{
+    position: relative;
+}
+#previewImage{
+    position: absolute;
+    left:800px;
+    top:400px;
+}
+
+#previewImage img{
+    object-fit:fill;
+}
+
+#alert{
+    position: absolute;
+    left:40%;
+    top:0;
+    z-index: 999;
+}
+.alert{
+    height: 50px;
+    margin-top: 15px;
+
 }

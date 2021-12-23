@@ -10,6 +10,7 @@ public class User {
     private String portrait;
     private Integer sex;
     private Integer degree;
+    private Integer power;
     private List<Hobby> hobbies;
 
     public Integer getId() {
@@ -58,6 +59,14 @@ public class User {
 
     public void setDegree(Integer degree) {
         this.degree = degree;
+    }
+
+    public Integer getPower() {
+        return power;
+    }
+
+    public void setPower(Integer power) {
+        this.power = power;
     }
 
     public List<Hobby> getHobbies() {

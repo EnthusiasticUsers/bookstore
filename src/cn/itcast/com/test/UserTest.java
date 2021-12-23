@@ -14,8 +14,8 @@ public class UserTest {
 
     @Test
     public void test1() throws JsonProcessingException {
-        String username = "admin";
-        String password = "12";
+        String username = "abc";
+        String password = "123";
         String user_info = null;
         User user = userService.login(username, password);
         String string = JsonUtil.objToStr(user);
@@ -30,5 +30,12 @@ public class UserTest {
         User user = new User();
         String str = JsonUtil.objToStr(user);
         System.out.println(str);
+    }
+
+    @Test
+    public void test03(){
+        Integer id = 1;
+        User user = userService.selectById(id);
+        System.out.println(user);
     }
 }

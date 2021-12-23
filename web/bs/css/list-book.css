@@ -226,7 +226,44 @@
 .hide{
     display: none;
 }
+.main header{
+    overflow: visible;
+}
+.admin .nav-welcome{
+    position: relative;
+}
+.admin .nav-welcome ul{
+    width: 100px;
+    height: 100px;
+    background-color: #59f0ea;
+    list-style: none;
+    border: solid 1px white;
+    display: none;
+    position: absolute;
+}
+.admin .nav-welcome ul li{
+    width: 100%;
+    color:black;
+    height: 48px;
+    border-bottom: dashed 1px white;
+    text-align: center;
+    line-height: 40px;
+}
+.admin .nav-welcome ul li:hover{
+    background-color: #deacf0;
+}
+.admin .nav-welcome:hover ul{
+    display: block;
+}
 
+#output{
+    border-radius: 5%;
+    margin-left: 5px;
+    font-size: 16px;
+    border:solid 1px #ccc;
+    color:black;
+    padding: 8px;
+}
 
 
 

@@ -7,6 +7,7 @@
         <head>
             <meta charset="UTF-8">
             <title>2011102030谢克力</title>
+            <link rel="stylesheet" href="bs/css/bootstrap.min.css">
             <link rel="stylesheet" href="bs/css/font-awesome.css">
             <link rel="stylesheet" href="bs/font/css/font-awesome.css">
             <link rel="stylesheet" href="bs/font/fonts/fontawesome-webfont.ttf">
@@ -18,10 +19,12 @@
             <script src="bs/js/jquery.min.js"></script>
             <script src="bs/js/base64.js"></script>
             <script src="bs/js/session.js"></script>
+            <script src="bs/js/bookUtil.js"></script>
             <script src="bs/js/edit-book.js"></script>
+            <script src="bs/js/cancel.js"></script>
         </head>
 <body>
-
+<div id="alert"></div>
 <!--左侧边栏-->
 <div class="left col-2">
     <!--左头部-->
@@ -43,7 +46,7 @@
         <li class="active">
             <h2 class="clearfix">
                 <span><i class="fa fa-bookmark"></i></span>
-                <a href="list-class.html" class="title">&nbsp图书类别管理</a>
+                <a href="msg-board.html" class="title">&nbsp查看留言</a>
                 <a href="" class="list"><i class="fa fa-angle-down"></i></a>
             </h2>
             <ul class="sublist">
@@ -121,6 +124,10 @@
             <div class="nav-pic"><img src="" alt=""></div>
             <div class="nav-welcome">
                 &nbsp <span class="user"></span>
+                <ul>
+                    <li id="changeUser">切换账号</li>
+                    <li id="exit">退出登录</li>
+                </ul>
             </div>
             <a href="" class="nav-list"><i class="fa fa-angle-down"></i></a>
         </div>
@@ -138,7 +145,7 @@
             <div class="col-12">
                 <div class="panel">
                     <div class="title">
-                        <h2>添加图书信息</h2>
+                        <h2>修改图书信息</h2>
                     </div>
                     <div class="content">
                         <form action="list-class.html" method="post">
@@ -174,11 +181,12 @@
                             <div class="form-group">
                                 <!--文件上传-->
                                 <div class="wrapper">
-                                    <p id="previewImage"></p>
                                     <div class="col-3 title">
                                         <label>文件上传</label>
                                     </div>
                                     <input type="file" id="imageFile"  accept="image/jpeg">
+                                    <!--图片预览-->
+                                    <div id="previewImage"></div>
                                 </div>
                             </div>
                             <div class="form-group">

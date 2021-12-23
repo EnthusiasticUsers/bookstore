@@ -1,0 +1,165 @@
+
+.maincontent ul li .user-box{
+    width: 300px;
+    height: 410px;
+    border: solid 2px #cccccc;
+    border-radius: 10px;
+}
+.maincontent ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.maincontent ul li{
+    width: 200px;
+    float: left;
+    margin-left: 140px;
+    padding: 10px;
+}
+.maincontent ul li .user-box{
+    font-size: 18px;
+}
+.maincontent ul li .user-box .portrait{
+    width: 220px;
+    height: 221px;
+    border-radius: 50%;
+    margin: auto;
+}
+.maincontent ul li .user-box .portrait img{
+    object-fit: fill;
+    width: 220px;
+    height: 221px;
+    border-radius: 50%;
+    margin: auto;
+}
+.maincontent ul li .user-box .username{
+    width: 150px;
+    margin: auto;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.maincontent ul li .user-box .power{
+    margin-top: 15px;
+    width: 150px;
+    margin: auto;
+}
+.maincontent ul li .user-box .handle{
+    width: 150px;
+    margin: auto;
+}
+
+.maincontent ul li .user-box .handle .edit-user{
+    font-size: 24px;
+    color:#E6A23C;
+}
+.maincontent ul li .user-box .handle .del-user{
+    font-size: 24px;
+    color:#F56C6C;
+}
+.maincontent ul li .user-box .handle .edit-user,.del-user{
+    cursor: pointer;
+}
+.maincontent .panel .page{
+    width: 180px;
+    margin: auto;
+}
+.bold{
+    font-weight: bold;
+}
+#prev,#next{
+    font-size: 18px;
+    margin-left: 30px;
+    color:blue;
+}
+#prev:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#next:hover{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.clear{
+    clear:both;
+}
+.main header{
+    overflow: visible;
+}
+.nav-welcome{
+    position: relative;
+}
+.nav-welcome ul{
+    width: 100px;
+    height: 100px;
+    background-color: #59f0ea;
+    list-style: none;
+    border: solid 1px white;
+    display: none;
+    position: absolute;
+}
+.nav-welcome ul li{
+    width: 100%;
+    color:black;
+    height: 48px;
+    border-bottom: dashed 1px white;
+    text-align: center;
+    line-height: 40px;
+}
+.nav-welcome ul li:hover{
+    background-color: #deacf0;
+}
+.nav-welcome:hover ul{
+    display: block;
+}
+.chooseBtn {
+    display: none;
+}
+
+.choose-label {
+    box-shadow: #ccc 0 0 0 1px;
+    width: 50px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 20px;
+    position: relative;
+    background-color: #bdbdbd;
+    overflow: hidden;
+}
+
+.choose-label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 20;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.chooseBtn:checked + label.choose-label:before {
+    left: 20px;
+}
+
+.chooseBtn:checked + label.choose-label {
+    background-color: #51ccee;
+}
+
+#alert{
+    position: absolute;
+    left:40%;
+    top:0;
+    z-index: 999;
+}
+.alert{
+    height: 50px;
+    margin-top: 15px;
+
+}

@@ -3,6 +3,21 @@
     padding: 0;
     list-style: none;
 }
+#alert{
+    position: absolute;
+    left:40%;
+    top:0;
+    z-index: 999;
+}
+.alert{
+    height: 50px;
+    margin-top: 15px;
+
+}
+.hidden{
+    display: none;
+}
+
 body{
     background-image: url("../../image/msg-borad-bg.png");
     background-size: cover;
@@ -17,7 +32,7 @@ body{
 .page-header{
     border-bottom: solid 2px white;
 }
-#myself{
+#myself,#back{
     margin-top: 50px;
 }
 

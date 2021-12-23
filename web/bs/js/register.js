@@ -5,7 +5,8 @@ $(function () {
        $(data).each(function () {
            var option = $("<option value='" + this.id + "'>" + this.degree + "</option>");
            $degree.append(option);
-       })
+       });
+       $("#degree option:eq(0)").attr("selected", true);
    });
     //获取爱好
     $.post("hobby",function (data) {
@@ -22,9 +23,9 @@ $(function () {
     $("#register").click(function () {
         if(!$(".rember").is(":checked")){
             alert("请勾选同意注册协议");
-        }else if(Number($("#username").val()) || ($("#username").val().length < 3 && $("#username").val().length > 8)){
+        }else if($("#username").val().length < 3 || $("#username").val().length > 8 || Number($("#username").val())){
             alert("用户名不能是数字,并且长度在3~8之间");
-        } else if($("#password").val() != $("#repassword").val()){
+        } else if($("#password").val().length < 3 || $("#password").val() !== $("#repassword").val()){
             alert("两次密码不一致");
         }else if(!checkFn($(".el-hobby input[type=checkbox]"))){
             alert("爱好至少选一个");

@@ -7,44 +7,445 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51da0e92-a4ad-4899-b0e1-338edae3b789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/bs/js/clientSideInclude.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/bs/js/session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/image/tx/tx1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/left.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/reply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib__4_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/filter/XssFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/filter/XssHttpServletRequestWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/CodeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/ExcelServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/util/DownUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cn/itcast/com/util/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/lib/poi-3.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/css/list-user.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/bookUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/cancel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/edit-user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/bs/js/list-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/bookstore_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Board.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/UserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/add-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/add-book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/msg-board.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/msg-board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/reset.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/add-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/add-book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/edit-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/edit-book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/msg-board.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/msg-board.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit-book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/touxiang.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/list-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/list-book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/msg-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/msg-board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/META-INF/bookstore.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/BoardDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/BookDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/DegreeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/HobbyDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/TypeDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/BookDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/DegreeDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/HobbyDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/TypeDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Board.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Cart.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Degree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Hobby.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/BoardService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/DegreeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/HobbyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/TypeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/BoardServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/DegreeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/HobbyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/TypeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BoardServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/CartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/DegreeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/HobbyServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/TypeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/BookTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/DegreeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/HobbyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/TypeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/test/UserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/ueditor/Uploader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/util/DruidUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/util/JsonUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/cn/itcast/com/util/StatusUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/classes/conn.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/druid-1.1.22.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-annotations-2.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-core-2.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/jackson-databind-2.12.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/junit-4.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-beans-5.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-core-5.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-jdbc-5.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/lib/spring-tx-5.1.10.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/add-book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/add-book.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/add-class.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/book-product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/fileUpload.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/found-password.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/img-move.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/leftaside.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/list-book.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/msg-board.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/rightaside.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/search.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/font/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/add-book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/clientSideInclude.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/edit-book.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/msg-board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/npm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/bs/js/session.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/edit-book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/163889223886611.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/163889228446710.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bb332512-c56f-4249-8700-b7479efefb687712p2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/book_new_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/book_presell_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/bookonline08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/image1-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/img01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/img02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/img03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/img04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/img05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/logo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/msg-borad-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/nav-01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/nav-03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/nav-book.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/nav_putdown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/p2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/qrcode.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/search.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/shopping-car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/timg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/timg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx/tx1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx/tx2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx/tx3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/image/tx/tx4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/left.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/list-book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/msg-board.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/reply.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/attachment/fileTypeMaps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/image/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/Uploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/commons-fileupload-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/fileUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/getContent.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/getMovie.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/getRemoteImage.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/imageManager.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/imageUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/scrawlUp.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/jsp/ueditor.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/images/imglabel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/fileprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.speed.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/swfupload/swfupload_fp9.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/bookstore_war_exploded/ueditor/ueditor.parse.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/BoardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/BoardDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/dao/impl/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/domain/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BoardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BoardServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/BookServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/servlet/UserServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cn/itcast/com/test/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cn/itcast/com/test/BoardTest.java" afterDir="false" />
@@ -52,27 +453,39 @@
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/BoardDaoImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/dao/impl/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/Board.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/UserService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BoardServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BoardServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/BookServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/servlet/UserServlet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/BoardTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/cn/itcast/com/test/UserTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/add-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/add-book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/bs/css/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/layout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/add-book.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/add-book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/add-class.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/add-class.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/list-book.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/list-book.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/login.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/css/msg-board.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/msg-board.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/bs/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/add-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/add-book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/edit-book.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/edit-book.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/bs/js/msg-board.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/msg-board.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/bs/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/bs/js/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/edit-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit-book.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/image/touxiang.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/tx2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/tx/tx1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/tx/tx2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/tx/tx3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/image/tx/tx4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/web/image/tx/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/left.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/list-book.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/list-book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/msg-board.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/msg-board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/reply.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/edit-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/list-user.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,11 +501,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -129,25 +542,27 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projects" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image" />
-      <recent name="C:\Users\23352\IdeaProjects\bookstore\web" />
-      <recent name="C:\Users\23352\IdeaProjects\bookstore\src" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\WEB-INF\lib" />
+      <recent name="C:\Users\23352\IdeaProjects\bookstore\web" />
+      <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image" />
+      <recent name="C:\Users\23352\IdeaProjects\bookstore\src" />
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\bs\js" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.itcast.com.util" />
+      <recent name="cn.itcast.com.servlet" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\23352\IdeaProjects\bookstore\web\image\tx" />
@@ -202,7 +617,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HobbyTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.test03" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bookstore" />
       <extension name="coverage">
         <pattern>
@@ -211,8 +626,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cn.itcast.com.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.itcast.com.test.HobbyTest" />
-      <option name="METHOD_NAME" value="test01" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.com.test.UserTest" />
+      <option name="METHOD_NAME" value="test03" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -251,13 +666,13 @@
       </method>
     </configuration>
     <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.48" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/msg-board.html" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:80/bookstore/login.html" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="bookstore:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/" />
+            <option name="CONTEXT_PATH" value="/bookstore" />
           </settings>
         </artifact>
       </deployment>
@@ -326,19 +741,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BookTest.test04" />
-      <item itemvalue="JUnit.HobbyTest.test01" />
       <item itemvalue="JUnit.UserTest.test2" />
       <item itemvalue="JUnit.BoardTest.test01" />
       <item itemvalue="JUnit.UserTest.test1" />
+      <item itemvalue="JUnit.UserTest.test03" />
       <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UserTest.test1" />
+        <item itemvalue="JUnit.UserTest.test03" />
         <item itemvalue="JUnit.BoardTest.test01" />
         <item itemvalue="JUnit.UserTest.test2" />
         <item itemvalue="JUnit.BookTest.test04" />
-        <item itemvalue="JUnit.HobbyTest.test01" />
       </list>
     </recent_temporary>
   </component>
@@ -384,7 +799,23 @@
       <workItem from="1638837061660" duration="2309000" />
       <workItem from="1638839719238" duration="16511000" />
       <workItem from="1638937982511" duration="13419000" />
-      <workItem from="1639015382021" duration="6173000" />
+      <workItem from="1639015382021" duration="24329000" />
+      <workItem from="1639111700229" duration="817000" />
+      <workItem from="1639194405674" duration="15116000" />
+      <workItem from="1639299646062" duration="1839000" />
+      <workItem from="1639439654948" duration="7871000" />
+      <workItem from="1639544798991" duration="5445000" />
+      <workItem from="1639617622545" duration="3806000" />
+      <workItem from="1639731426612" duration="1075000" />
+      <workItem from="1639803802595" duration="4385000" />
+      <workItem from="1639889981400" duration="7825000" />
+      <workItem from="1639897860852" duration="27261000" />
+      <workItem from="1639968400551" duration="11358000" />
+      <workItem from="1639996156525" duration="14552000" />
+      <workItem from="1640044234411" duration="298000" />
+      <workItem from="1640044850122" duration="4914000" />
+      <workItem from="1640054593155" duration="1220000" />
+      <workItem from="1640063965608" duration="25000" />
     </task>
     <servers />
   </component>

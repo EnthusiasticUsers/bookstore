@@ -4,12 +4,13 @@ var editor = UE.getEditor("content",{toolbars:[[
         'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist','|',
         'simpleupload', 'insertimage','|', 'selectall', 'cleardoc',"emotion"
     ]],"initialFrameWidth":450,"initialFrameHeight":150});
-var scroll_height = 0;//滚动高度
-var currentPage = 1;//当前页
-var size = 3;//每页显示几条数据
-var totalPage = 0;//总共几页
-var numberSize = 10;//页码每次做多显示几个
-var data = null; //留言数据
+var scroll_height = 0;  //滚动高度
+var currentPage = 1;    //当前页
+var size = 3;   //每页显示几条数据
+var totalPage = 0;  //总共几页
+var numberSize = 10;    //页码每次做多显示几个
+var data = null;    //留言数据
+var base64 = new Base64();  //base64编码
 
 //格式化时间
 function dateFtt(fmt,date) {   //author: meizz
@@ -63,6 +64,7 @@ function renderMsg() {
 
 //渲染页码
 function renderPage() {
+    console.log(currentPage);
     //numberPage = totalPage <= numberSize ? numberSize : (totalPage + numberSize) / numberSize;
     var low = numberSize * Math.floor((currentPage-1) / numberSize) + 1;
     var high = numberSize * Math.floor((currentPage-1) / numberSize + 1);
@@ -91,52 +93,65 @@ function renderPage() {
     var pageIndex = currentPage % numberSize - 1;
     $(".page-number").eq(pageIndex).addClass("active");
 
+
 }
 
+//页码点击
 function pageFn(obj) {
     currentPage = parseInt($(obj).children("span").html());
     $(obj).addClass("active").siblings().removeClass("active");
     renderMsg(currentPage, size, totalPage, data);
 }
 
+//首页,尾页,上一页,下一页
 function pageClick() {
+    $("#prev").unbind("click");
+    $("#next").unbind("click");
+    $("#begin").unbind("click");
+    $("#end").unbind("click");
+
     //上一页
-    $("#prev").click(function () {
+    $("#prev").bind("click", function (e) {
         currentPage = currentPage > numberSize ? Math.floor((currentPage-numberSize-1) / numberSize) * numberSize + 1 : currentPage;
         renderMsg();
         renderPage();
+        e.stopPropagation();
     });
 
     //下一页
-    $("#next").click(function () {
-       currentPage = Math.floor((currentPage+numberSize-1) / numberSize) * numberSize + 1;
-       currentPage = currentPage >= totalPage ? totalPage : currentPage;
+    $("#next").bind("click", function (e) {
+        currentPage = Math.floor((currentPage+numberSize-1) / numberSize) * numberSize + 1;
+        currentPage = currentPage >= totalPage ? totalPage : currentPage;
         renderMsg();
         renderPage();
+        e.stopPropagation();
     });
 
     //首页
-    $("#begin").click(function () {
+    $("#begin").bind("click", function (e) {
         currentPage = 1;
         renderMsg();
         renderPage();
+        e.stopPropagation();
     });
 
     //尾页
-    $("#end").click(function () {
+    $("#end").bind("click", function (e) {
         currentPage = totalPage;
         renderMsg();
         renderPage();
+        e.stopPropagation();
     });
 
 
 }
 
 //获取留言
-function getMsgFn(base64){
+function getMsgFn(cachePage, key){
     var formData = new FormData();
     var status = base64.encode("show");
     formData.append("status", status);
+    if(key) formData.append("key", key);
     $.ajax({
         type:"POST",
         url:"board",
@@ -145,33 +160,54 @@ function getMsgFn(base64){
         data:formData,
         success:function (list) {
              data = list;
-             currentPage = 1;
+             currentPage = cachePage ? cachePage : 1;
              size = 3;
-             totalPage = data.length <= size ? 1 : Math.floor((data.length + size) / size);
+             totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);
              numberSize = 10;
-            //渲染数据
-            renderMsg();
-            //渲染页码
-            renderPage();
-            //分页点击
-            pageClick()
+             //渲染数据
+             renderMsg();
+             //渲染页码
+             renderPage();
+             //分页点击
+             pageClick();
         }
     });
 }
 
+
+
+
+
+function text(str){
+    return $('<div>',{text:str}).text();
+}
+
 $(function () {
-    var base64 = new Base64();
-    getMsgFn(base64);//渲染留言信息
+
+    //记录滚动高度
+    $(document).bind("scroll", function () {
+       scroll_height = $(this).scrollTop();
+        console.log(scroll_height);
+    });
+
+    getMsgFn();//渲染留言信息
 
     //查看自己
-    $(".send").click(function () {
+    $("#myself").click(function () {
+        var author = $("#author").val();
+        if($(this).text() === "取消"){
+            $(this).text("查看自己");
+            getMsgFn();
+        }else{
+            $(this).text("取消");
+            getMsgFn(null, author);
+        }
+
 
     });
 
-
-
-
-    $("#release").click(function () {
+    //发送留言
+    $("#release").click(function (e) {
         //实例化form对象(能够支持文件上传)
         var formData = new FormData();
         var status = base64.encode("insert");
@@ -191,19 +227,31 @@ $(function () {
             contentType : false,
             data:formData,
             success:function (data) {
+                //取消滚动绑定
+                $(document).unbind("scroll");
                 if(data.code === 200){
-                    alert("留言成功!");
+                    tips( "恭喜你成功留下了你的脚印!",true);
                     $(".msgCon ul").empty();
-                    getMsgFn(base64);
+                    if($("#myself").text() === "取消"){
+                        getMsgFn(currentPage,$("#author").val());
+                    }else{
+                        getMsgFn(currentPage);
+                    }
                 }else{
-                    alert("留言失败!");
+                    tips("很遗憾,留言失败,可能出了点小问题...", false);
                 }
                 $("#title").val("");
                 editor.setContent("");
             },
             error:function (data) {
                 alert(data.status + "|" + data.responseText);
+            },
+            complete:function (data) {
+                //console.log(data);
+                console.log(scroll_height);
+                $(document).scrollTop(scroll_height);//复原滚动高度
             }
-        })
+        });
+        e.stopPropagation();
     })
 });

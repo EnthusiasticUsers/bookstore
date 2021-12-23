@@ -1,4 +1,15 @@
 $(function () {
+    $("#imageFile").change(function() {
+        var ans = validate_img($(this)[0]);
+        if(ans){
+            var img_src =preview($(this)[0]);
+            var $img = $("<img src=\"" + img_src + "\" alt=\"\" width=\"240\" height=\"160\">");
+            $("#previewImage").empty().append($img);
+        }else{
+            $(this)[0].val("");
+        }
+    });
+
     //实例化base64加密
     var base = new Base64();
 
@@ -12,7 +23,7 @@ $(function () {
         // 0的ASCII是48,9的ASCII是57
         for (var i = 0; i < $val.length; i++) {
             code = $val.charAt(i).charCodeAt(0);
-            if (code < 48 || code > 57) {
+            if (!(code === 46 || code >= 48 && code <= 57)) {
                 $(this)[0].focus();
                 $(this).val("");
                 alert("请输入数字!");
@@ -84,11 +95,16 @@ $(function () {
                     contentType: false,
                     processData: false,
                     success: function (data) {
+                        if(data.code === 200){
+                            tips(data.msg, true);
+                        }else{
+                            tips(data.msg, false);
+                        }
                         $("#name").val("");
                         $("#price").val("");
                         $("#imageFile").val(null);
                         $("#menu option:eq(0)").attr("selected", true);
-                        alert(data.msg);
+                        $("#previewImage").empty();
                     },
                     error: function (data) {
                         alert(data.status);

@@ -6,7 +6,6 @@ body{
 /* 主体盒子 */
 .loginform .panel{
     width:300px;
-    height: 500px;
     margin:auto;
     padding: 20px;
     border:solid 1px white;
@@ -139,6 +138,13 @@ body{
 .footer .author{
     color:white;
     font-size: 14px;
+}
+.hidden{
+    display: none;
+}
+#changeCode:hover{
+    color: #b35aff;
+    cursor: pointer;
 }
 
 

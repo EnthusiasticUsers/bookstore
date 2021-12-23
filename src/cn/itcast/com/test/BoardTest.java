@@ -12,7 +12,7 @@ public class BoardTest {
 
     @Test
     public void test01(){
-        List<Board> boards = boardService.selectByKey(null);
+        List<Board> boards = boardService.selectByKey("admin");
         for(Board board : boards){
             System.out.println(board);
         }

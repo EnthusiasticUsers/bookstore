@@ -15,7 +15,7 @@
     <script src="bs/js/base64.js"></script>
     <script src="bs/js/session.js"></script>
     <script src="bs/js/book.js"></script>
-
+    <script src="bs/js/cancel.js"></script>
 </head>
 <body>
 
@@ -39,7 +39,7 @@
         <li class="active">
             <h2 class="clearfix">
                 <span><i class="fa fa-bookmark"></i></span>
-                <a href="list-class.html" class="title">&nbsp图书类别管理</a>
+                <a href="msg-board.html" class="title">&nbsp查看留言</a>
                 <a href="" class="list"><i class="fa fa-angle-down"></i></a>
             </h2>
             <ul class="sublist">
@@ -117,6 +117,10 @@
             <div class="nav-pic"><img src="" alt=""></div>
             <div class="nav-welcome">
                 &nbsp <span class="user"></span>
+                <ul>
+                    <li id="changeUser">切换账号</li>
+                    <li id="exit">退出登录</li>
+                </ul>
             </div>
             <a href="" class="nav-list"><i class="fa fa-angle-down"></i></a>
         </div>
@@ -138,6 +142,7 @@
                     <div class="form-group">
                         <input type="text" id="key" placeholder="请输入关键字搜索..." class="form-control col-3">
                         <input type="button" id="search" value="搜索" class="search">
+                        <a href="/bookstore/excel" id="output"><i class="fa fa-sign-in"></i></a>
                     </div>
                     <table id="book-table">
                         <tr>

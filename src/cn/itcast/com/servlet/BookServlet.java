@@ -19,7 +19,7 @@ import java.io.OutputStream;
 import java.util.Base64;
 import java.util.List;
 import java.util.Random;
-import java.util.UUID;
+
 
 @MultipartConfig(location = "/")
 @WebServlet("/book")
@@ -42,31 +42,31 @@ public class BookServlet extends HttpServlet {
         List<Book> books = null;
         //初始化返回json
         String json = "";
+
         //选择操作
-        if (status.equals("show")) {
+        if ("show".equals(status)) {
             books = bookService.selectByKey(key);
             json = JsonUtil.objToStr(books);
-        } else if (status.equals("add")) {
+        } else if ("add".equals(status)) {
             Part imageFile = request.getPart("imageFile");
             String image = getTheOnlyFileName(imageFile);
-            Book book = getBook(name, price, image, type, imageFile);
-            System.out.println(book);
+            Book book = getBook(null ,name, price, image, type, imageFile);
             boolean flag = bookService.add(book);
             json = flag ? StatusUtil.success("插入图书信息成功!") : StatusUtil.failed("插入图书信息失败!");
-            System.out.println("json:" + json);
-        } else if (status.equals("update")) {
+        } else if ("update".equals(status)) {
             Part imageFile = request.getPart("imageFile");
             String image = getTheOnlyFileName(imageFile);
-            Book book = getBook(name, price, image, type, imageFile);
+            Book book = getBook(Integer.parseInt(id), name, price, image, type, imageFile);
+            System.out.println(book);
             boolean flag = bookService.update(book);
             json = flag ? StatusUtil.success("修改图书信息成功!") : StatusUtil.failed("修改图书信息失败!");
-        } else if (status.equals("delete")) {
+        } else if ("delete".equals(status)) {
             boolean flag = bookService.delete(Integer.parseInt(id));
             json = flag ? StatusUtil.success("删除图书信息成功!") : StatusUtil.failed("删除图书信息失败!");
-        } else if (status.equals("id")) {
+        } else if ("id".equals(status)) {
             books = bookService.selectById(Integer.parseInt(id));
             json = JsonUtil.objToStr(books);
-        } else if (status.equals("batchDelete")) {
+        } else if ("batchDelete".equals(status)) {
             books = JsonUtil.strToObjList(ids, Book.class);
             boolean flag = bookService.batchDelete(books);
             json = flag ? StatusUtil.success("批量删除图书信息成功!") : StatusUtil.failed("批量删除图书信息失败!");
@@ -83,14 +83,15 @@ public class BookServlet extends HttpServlet {
         doPost(request, response);
     }
 
-    private Book getBook(String name, String price, String image, String type, Part imageFile) throws IOException {
+    private Book getBook(Integer id, String name, String price, String image, String type, Part imageFile) throws IOException {
         //获取真实路径
         String path = getServletContext().getRealPath("/image");
         //设置图片url路径
-        String urlPath = "http://127.0.0.1/image/";
+        String urlPath = "image/";
         //写入文件
         writeToFile(path, image, imageFile);
         Book book = new Book();
+        book.setId(id);
         book.setName(name);
         book.setPrice(Double.parseDouble(price));
         book.setImage(urlPath + image);

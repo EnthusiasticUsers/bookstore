@@ -1,3 +1,4 @@
+var data = null;
 $(function () {
     //实例化base64
     var base = new Base64();
@@ -15,14 +16,16 @@ $(function () {
             processData : false,
             contentType : false,
             data:formData,
-            success:function (data) {
+            success:function (books) {
+                //清空搜索词
+                $("#key").val("");
+                data = books;
                 //替换关键字
                 data = replaceKeyFn(key, data);
                 //直接对接收的数据进行分页
                 var currentPage = 1;//当前页
                 var size = 5;//每页显示几条数据
                 var totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);//总页数
-
 
                 $("#total-page").html(data.length);//总共几条数据
                 $("#now-page").html(currentPage);//当前页
@@ -127,7 +130,7 @@ $(function () {
                             "                            <td>\n" +
                             "                                <div class=\"table-list\">\n" +
                             "                                    <label for=\" " + data[i].id + " \">\n" +
-                            "                                        <input type=\"checkbox\" class=\"rember\" id=\"" + data[i].id + "\" value=\"" + data[i].id + "\" index=\"" + i + "\">\n" +
+                            "                                        <input type=\"checkbox\" class=\"rember product\" id=\"" + data[i].id + "\" value=\"" + data[i].id + "\" index=\"" + i + "\">\n" +
                             "                                        <span class=\"checked\"><i class=\"fa fa-check-square-o\"></i></span>\n" +
                             "                                        <span class=\"unchecked\"><i class=\"fa fa-square-o\"></i></span>\n" +
                             "                                    </label>\n" +
@@ -162,16 +165,22 @@ $(function () {
                                 formData.append("id", id);
                                 $(this).parent().parent().parent().parent().remove();
                                 data.splice(index,1);
-                                totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);//重新计算总页数
-                                $("#total-page").html(data.length);
+
+                               if($("#book-table").find(".book-msg").length === 0){
+                                   currentPage -= 1;
+                               }
                                 $.ajax({
                                     type:"POST",
                                     url:"book",
                                     processData : false,
                                     contentType : false,
                                     data:formData,
-                                    success:function (data) {
-                                        alert(data.msg);
+                                    success:function (res) {
+                                        totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);//重新计算总页数
+                                        $("#total-page").html(data.length);
+                                        $("#now-page").html(currentPage);
+                                        pageFn(currentPage, size);
+                                        alert(res.msg);
                                     }
                                 })
                             }
@@ -192,7 +201,8 @@ $(function () {
                         $("#delMore").click(function () {
                             var formData = new FormData();
                             var status = base.encode("batchDelete");
-                            var ids = getIdFn($(".rember"));
+                            var ids = getIdFn($(".product"));
+
                             formData.append("status", status);
                             formData.append("ids", JSON.stringify(ids));
                             for(var j in ids){
@@ -204,16 +214,31 @@ $(function () {
                                     }
                                 }
                             }
-                            totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);//重新计算总页数
-                            $("#total-page").html(data.length);
+
+                            //通过删除书本,重新计算当前页
+                            if(ids.length >= size) {
+                                currentPage = currentPage <= Math.floor(ids.length / size) ? 1 : currentPage -= Math.floor(ids.length / size);
+                            } else if($("#book-table").find(".book-msg").length === 0) {
+                                currentPage = currentPage <= 1 ? 1 : currentPage -= 1;
+                                console.log(currentPage + "|" + $("#book-table").find(".book-msg").length);
+                            }
+
+                            //ajax删除数据
                             $.ajax({
                                 type:"POST",
                                 url:"book",
                                 processData : false,
                                 contentType : false,
                                 data:formData,
-                                success:function (data) {
-                                    alert(data.msg);
+                                success:function (res) {
+                                    totalPage = data.length <= size ? 1 : Math.floor((data.length + size - 1) / size);//总页数
+                                    $("#now-page").html(currentPage);
+                                    $("#total-page").html(data.length);
+                                    pageFn(currentPage, size);
+                                    if($("#rember").is(":checked")){
+                                        $("#rember").prop("checked", false);
+                                    }
+                                    alert(res.msg);
                                 }
                             })
                         });
@@ -232,6 +257,8 @@ $(function () {
                     }
                 }
 
+
+
             },
             error:function (res) {
                 alert(res.responseText);
@@ -240,6 +267,17 @@ $(function () {
     });
 
 
+    $("#rember").click(function () {
+        if($(this).is(":checked")){
+            $(".product").each(function () {
+                $(this).prop("checked", true);
+            })
+        }else{
+            $(".product").each(function () {
+                $(this).prop("checked", false);
+            })
+        }
+    });
 
 
     //获取所有选中的图书ID

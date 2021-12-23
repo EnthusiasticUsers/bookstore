@@ -43,7 +43,7 @@ public class BoardServlet extends HttpServlet {
             boolean flag = boardService.insert(board);
             json = flag ? StatusUtil.success("插入留言成功!") : StatusUtil.failed("插入留言失败!");
         }else if("show".equals(status)){
-            List<Board> boards = boardService.selectByKey(null);
+            List<Board> boards = boardService.selectByKey(key);
             json = JsonUtil.objToStr(boards);
         } else{
             System.out.println("error:" + status);

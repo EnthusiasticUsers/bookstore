@@ -1,12 +1,14 @@
 $(function () {
-    /*$("#imageFile").change(function() {
-       var fileReader = new FileReader();
-       fileReader.onload = function(e) {
-           $("#previewImage").append("<span class='center-block text-success'>图像预览</span><image class='img-thumbnail' style='max-width:400px;height:auto;' src="+e.target.result+"/>");
-       }
-       var imageFile = this.files[0];
-       fileReader.readAsDataURL(imageFile);
-   });*/
+    $("#imageFile").change(function() {
+        var ans = validate_img($(this)[0]);
+        if(ans){
+            var img_src =preview($(this)[0]);
+            var $img = $("<img src=\"" + img_src + "\" alt=\"\" width=\"240\" height=\"160\">");
+            $("#previewImage").empty().append($img);
+        }else{
+            $(this)[0].val("");
+        }
+   });
 
     //实例化base64
     var base = new Base64();
@@ -26,10 +28,10 @@ $(function () {
             // 0的ASCII是48,9的ASCII是57
             for (var i = 0; i < $val.length; i++) {
                 code = $val.charAt(i).charCodeAt(0);
-                if (code < 48 || code > 57) {
+                if (!(code === 46 || code >= 48 && code <= 57)) {
                     $(this)[0].focus();
                     $(this).val("");
-                    alert("请输入数字!");
+                    tips("请输入数字!", false);
                     break;
                 }
             }
@@ -38,9 +40,9 @@ $(function () {
     //提交增加后的图书信息
     $(".btn-1").click(function () {
         if($("#name").val().length > 20 || $("#name").val().length < 1){
-            alert("图书名长度不够,应该在1~20之间");
+            tips("图书名长度不够,应该在1~20之间", false);
         }else if(parseFloat($("#price").val()) < 5 ||  parseFloat($("#price").val()) > 500){
-            alert("图书价格,应该在之间5~500之间");
+            tips("图书价格,应该在之间5~500之间", false);
         }else{
             var status = base.encode("add");
             var name = $("#name").val();
@@ -61,11 +63,16 @@ $(function () {
                 contentType : false,
                 processData : false,
                 success:function (data) {
+                    if(data.code === 200){
+                        tips(data.msg , true);
+                    }else{
+                        tips(data.msg , false);
+                    }
                     $("#name").val("");
                     $("#price").val("");
                     $("#imageFile").val(null);
+                    $("#previewImage").empty();
                     $("#menu option:eq(0)").attr("selected", true);
-                    alert(data.msg);
                 },
                 error:function (data) {
                     console.log(data);
